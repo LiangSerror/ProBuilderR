@@ -436,12 +436,14 @@ namespace UnityEditor.ProBuilder
                 using (new EditorGUIUtility.IconSizeScope(TextModeIconSize))
                 {
                     if (GUILayout.Button(guiContent, MenuActionStyles.buttonStyleVertical))
-                    //>>>>>>>>>>>>>>>>>>>>>>>>
+                //>>>>>>>>>>>>>>>>>>>>>>>>
                     {
                         ActionResult res = DoAction();
                         EditorUtility.ShowNotification(res.notification);
                     }
+
                 }//<<<<<<<<<<<<<>>>>>>>>>>>>>
+
                 MenuActionState altState = optionsMenuState;
 
                 if ((altState & MenuActionState.Visible) == MenuActionState.Visible)
@@ -491,16 +493,16 @@ namespace UnityEditor.ProBuilder
 
                 if (textModeIcon)
                 {
-                    bool buttonEnabled = (menuActionState & MenuActionState.Enabled) == MenuActionState.Enabled;
-                    Texture2D t = (buttonEnabled || !disabledIcon ? icon : disabledIcon);
-                    if (t)
-                    {
-                        m_LastCalculatedSize.x += t.width;
-                        m_LastCalculatedSize.y = System.Math.Max(m_LastCalculatedSize.y, t.height);
-                    }
+                    //bool buttonEnabled = (menuActionState & MenuActionState.Enabled) == MenuActionState.Enabled;
+                    //Texture2D t = (buttonEnabled || !disabledIcon ? icon : disabledIcon);
+                    //if (t)
+                    //{
+                    //    m_LastCalculatedSize.x += t.width;
+                    //    m_LastCalculatedSize.y = System.Math.Max(m_LastCalculatedSize.y, t.height);
+                    //}
 
-                    //m_LastCalculatedSize.x += TextModeIconSize.x;
-                    //m_LastCalculatedSize.y = System.Math.Max(m_LastCalculatedSize.y, TextModeIconSize.y);
+                    m_LastCalculatedSize.x += TextModeIconSize.x;
+                    m_LastCalculatedSize.y = System.Math.Max(m_LastCalculatedSize.y, TextModeIconSize.y);
                 }
                 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             }
