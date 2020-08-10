@@ -3,8 +3,11 @@
 给 ProBuilder插件 主界面的 “Text Mode” 加上图标和汉化
 
 被修改过的脚本有：
+
  -ProBuilderEditor.cs
+
  -MenuAction.cs
+ 
  -TooltipContent.cs
 
 修改备注：
@@ -25,10 +28,14 @@
 
 
 
-修改记录文章： 
+修改记录文章：
+
  -[更改 ProBuilber 插件（一）：给 Text Mode 添加图标](https://www.liangs.top/ProBuilderModify-01/)
+ 
  -[更改 ProBuilber 插件（二）：给 Text Mode 添加汉化](https://www.liangs.top/ProBuilderModify-02/)
+ 
  -[.待续](https://www.liangs.top/ProBuilderModify-03/)
+
 
 
 
