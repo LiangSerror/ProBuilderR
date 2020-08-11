@@ -38,7 +38,7 @@
  
  - [更改 ProBuilber 插件（二）：给 Text Mode 添加汉化](https://www.liangs.top/ProBuilderModify-02/)
  
- - [.待续](https://www.liangs.top/ProBuilderModify-03/)
+ - [更改 ProBuilber 插件（三）：将之前的修改添加到选单](https://www.liangs.top/ProBuilderModify-03/)
 
 
 <br/>
